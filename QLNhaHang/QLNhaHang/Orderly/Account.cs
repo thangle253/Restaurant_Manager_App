@@ -155,7 +155,7 @@ namespace Orderly
         // Kiểm tra xem tài khoản có phải là Admin không
         private bool CheckIfAdmin(string username)
         {
-            string connectionString = "Data Source=DESKTOP-ETDHM2T\\SQLSEVER;Initial Catalog=LoginDoAn;Integrated Security=True;TrustServerCertificate=True";
+            string connectionString = "Data Source=.;Initial Catalog=LoginDoAn;Integrated Security=True;TrustServerCertificate=True";
 
             using (SqlConnection con = new SqlConnection(connectionString))
             {
@@ -326,6 +326,11 @@ namespace Orderly
             {
                 MessageBox.Show("Lỗi khi cập nhật tài khoản: " + ex.Message);
             }
+        }
+
+        private void dgvAccount_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

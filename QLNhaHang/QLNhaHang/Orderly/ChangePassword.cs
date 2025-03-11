@@ -39,7 +39,7 @@ namespace Orderly
                 return;
             }
 
-            using (SqlConnection con = new SqlConnection("Data Source=DESKTOP-ETDHM2T\\SQLSEVER;Initial Catalog=LoginDoAn;Integrated Security=True;TrustServerCertificate=True"))
+            using (SqlConnection con = new SqlConnection("Data Source=.;Initial Catalog=LoginDoAn;Integrated Security=True;TrustServerCertificate=True"))
             {
                 con.Open();
 

@@ -46,14 +46,11 @@
             this.lblThoat = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pnlGiaoDienChin = new System.Windows.Forms.Panel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pnlSide.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.pnlHeader.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            this.pnlGiaoDienChin.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlSide
@@ -238,7 +235,7 @@
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(76)))), ((int)(((byte)(65)))));
             this.label4.Location = new System.Drawing.Point(91, 20);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(342, 25);
+            this.label4.Size = new System.Drawing.Size(531, 42);
             this.label4.TabIndex = 7;
             this.label4.Text = "Restaurant Management System";
             // 
@@ -250,7 +247,7 @@
             this.lblQuayLai.ForeColor = System.Drawing.Color.White;
             this.lblQuayLai.Location = new System.Drawing.Point(849, 11);
             this.lblQuayLai.Name = "lblQuayLai";
-            this.lblQuayLai.Size = new System.Drawing.Size(30, 35);
+            this.lblQuayLai.Size = new System.Drawing.Size(48, 55);
             this.lblQuayLai.TabIndex = 6;
             this.lblQuayLai.Text = "–";
             this.lblQuayLai.Click += new System.EventHandler(this.lblQuayLai_Click);
@@ -263,7 +260,7 @@
             this.lblThoat.ForeColor = System.Drawing.Color.White;
             this.lblThoat.Location = new System.Drawing.Point(885, 12);
             this.lblThoat.Name = "lblThoat";
-            this.lblThoat.Size = new System.Drawing.Size(29, 34);
+            this.lblThoat.Size = new System.Drawing.Size(48, 55);
             this.lblThoat.TabIndex = 5;
             this.lblThoat.Text = "x";
             this.lblThoat.Click += new System.EventHandler(this.lblThoat_Click);
@@ -281,7 +278,6 @@
             // pnlGiaoDienChin
             // 
             this.pnlGiaoDienChin.BackColor = System.Drawing.Color.LemonChiffon;
-            this.pnlGiaoDienChin.Controls.Add(this.pictureBox2);
             this.pnlGiaoDienChin.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlGiaoDienChin.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pnlGiaoDienChin.Location = new System.Drawing.Point(233, 57);
@@ -289,19 +285,9 @@
             this.pnlGiaoDienChin.Size = new System.Drawing.Size(926, 615);
             this.pnlGiaoDienChin.TabIndex = 7;
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(-22, -107);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(978, 830);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 1;
-            this.pictureBox2.TabStop = false;
-            // 
             // FormApp
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(23F, 55F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(36F, 87F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1159, 672);
@@ -321,8 +307,6 @@
             this.pnlHeader.ResumeLayout(false);
             this.pnlHeader.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            this.pnlGiaoDienChin.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -346,6 +330,5 @@
         private System.Windows.Forms.Button btnAccount;
         private System.Windows.Forms.Button btnRevenus;
         private System.Windows.Forms.Panel pnlGiaoDienChin;
-        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }
