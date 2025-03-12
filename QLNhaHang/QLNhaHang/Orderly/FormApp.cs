@@ -111,6 +111,11 @@ namespace Orderly
         {
             loadform(new Account());
         }
+
+        private void pnlGiaoDienChin_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
 
