@@ -49,5 +49,28 @@ namespace Orderly
                 // Để lại chương trình như cũ, không thoát
             }
         }
+
+        private void Home_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnProfile_Click_1(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(Session.CurrentUsername))
+            {
+                MessageBox.Show("Không tìm thấy thông tin đăng nhập. Vui lòng đăng nhập lại.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            frmProFile profileForm = new frmProFile(Session.CurrentUsername);
+            profileForm.ShowDialog();
+        }
+
+        private void btnChangePassWord_Click_1(object sender, EventArgs e)
+        {
+            frmChangePassword changePasswordForm = new frmChangePassword();
+            changePasswordForm.ShowDialog();
+        }
     }
 }
