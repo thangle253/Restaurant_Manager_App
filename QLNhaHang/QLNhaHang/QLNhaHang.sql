@@ -1,6 +1,4 @@
-﻿CREATE DATABASE QuanLyNhaHang;
-GO
--- Sử dụng Database
+﻿-- Sử dụng Database
 USE QuanLyNhaHang;
 GO
 
@@ -17,6 +15,7 @@ CREATE TABLE MonAn (
     TenMon NVARCHAR(100) NOT NULL, -- Dùng NVARCHAR cho tiếng Việt có dấu
     MaLoaiMon INT NOT NULL,
     GiaTien DECIMAL(18, 2) NOT NULL,
+	HinhAnh NVARCHAR(255); ,
     FOREIGN KEY (MaLoaiMon) REFERENCES LoaiMon(MaLoaiMon)
 );
 GO
@@ -27,6 +26,7 @@ CREATE TABLE BanAn (
     TenBan NVARCHAR(50) NOT NULL, -- Dùng NVARCHAR cho tên bàn có thể có dấu
     TrangThai NVARCHAR(20) NOT NULL,
     SoLuongChoNgoi INT NOT NULL
+
 );
 GO
 
@@ -136,19 +136,25 @@ INSERT INTO LoaiMon (MaLoaiMon, TenLoaiMon) VALUES
 GO
 
 -- Dữ liệu bảng MonAn
-INSERT INTO MonAn (MaMon, TenMon, MaLoaiMon, GiaTien) VALUES 
-(1, N'Gỏi cuốn', 1, 35000),
-(2, N'Chả giò', 1, 40000),
-(3, N'Cơm tấm sườn', 2, 45000),
-(4, N'Phở bò', 2, 50000),
-(5, N'Bánh xèo', 2, 60000),
-(6, N'Bánh bèo', 2, 30000),
-(7, N'Chè trôi nước', 3, 20000),
-(8, N'Rau câu dừa', 3, 15000),
-(9, N'Sinh tố dâu', 4, 30000),
-(10, N'Trà đá', 4, 5000),
-(11, N'Cà phê sữa', 4, 20000),
-(12, N'Nước ngọt', 4, 15000);
+INSERT INTO MonAn (MaMon, TenMon, MaLoaiMon, GiaTien, HinhAnh) VALUES 
+(1, N'Gỏi cuốn', 1, 35000, 'Food_Image\GoiCuon.png'),
+(2, N'Chả giò', 1, 40000, 'Food_Image\ChaGio.png'),
+(3, N'Cơm tấm sườn', 2, 45000, 'Food_Image\ComTam.png'),
+(4, N'Phở bò', 2, 50000, 'Food_Image\PhoBo.png'),
+(5, N'Bánh xèo', 2, 60000, 'C:\Users\BanhXeo.png'),
+(6, N'Bánh bèo', 2, 30000, 'Food_Image\BanhBeo.png'),
+(7, N'Chè trôi nước', 3, 20000, 'Food_Image\CheTroiNuoc.png'),
+(8, N'Rau câu dừa', 3, 15000, 'Food_Image\RauCauDua.png'),
+(9, N'Sinh tố dâu', 4, 30000, 'Food_Image\SinhToDau.png'),
+(10, N'Trà đá', 4, 5000, 'Food_Image\TraDa.png'),
+(11, N'Cà phê sữa', 4, 20000, 'Food_Image\CafeSua.png'),
+(12, N'Nước ngọt', 4, 15000, 'Food_Image\Coca.png');
 GO
+
+
+
+
+
+
 
 
