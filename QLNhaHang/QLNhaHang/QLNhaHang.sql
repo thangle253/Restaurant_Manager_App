@@ -1,4 +1,6 @@
-﻿-- Sử dụng Database
+﻿CREATE DATABASE QuanLyNhaHang;
+GO
+-- Sử dụng Database
 USE QuanLyNhaHang;
 GO
 

@@ -1823,3 +1823,4 @@ C:\Users\APPLE\Documents\Restaurant_Manager_App\QLNhaHang\QLNhaHang\Orderly\obj\
 C:\Users\APPLE\Documents\Restaurant_Manager_App\QLNhaHang\QLNhaHang\Orderly\obj\Debug\Orderly.csproj.Up2Date
 C:\Users\APPLE\Documents\Restaurant_Manager_App\QLNhaHang\QLNhaHang\Orderly\obj\Debug\Orderly.exe
 C:\Users\APPLE\Documents\Restaurant_Manager_App\QLNhaHang\QLNhaHang\Orderly\obj\Debug\Orderly.pdb
+C:\Users\APPLE\Documents\Restaurant_Manager_App\QLNhaHang\QLNhaHang\Orderly\obj\Debug\Orderly.FoodItemCard.resources

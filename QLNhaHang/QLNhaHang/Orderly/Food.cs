@@ -23,6 +23,8 @@ namespace Orderly
 
         private void Food_Load(object sender, EventArgs e)
         {
+            LoadFoodCards(); // Gọi phương thức để load dữ liệu vào card
+
             try
             {
                 // Lấy danh sách loại món từ cơ sở dữ liệu
@@ -47,6 +49,25 @@ namespace Orderly
             }
 
         }
+
+        private void LoadFoodCards()
+        {
+            flpFoodList.Controls.Clear(); // Xóa tất cả card cũ
+
+            var foodList = context.MonAns.Include(f => f.LoaiMon).ToList();
+
+            foreach (var food in foodList)
+            {
+                FoodItemCard card = new FoodItemCard();
+
+                // Gọi phương thức SetData để gán dữ liệu lên từng label trong UserControl
+                card.SetData(food.MaMon, food.TenMon, food.LoaiMon.TenLoaiMon, food.GiaTien,food.HinhAnh);
+
+                flpFoodList.Controls.Add(card);
+            }
+        }
+
+
 
         private void cmbLoai_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -434,6 +455,11 @@ namespace Orderly
             }
         }
 
-       
+
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
  }

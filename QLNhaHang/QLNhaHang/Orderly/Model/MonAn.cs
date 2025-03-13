@@ -1,4 +1,4 @@
-namespace Orderly.Model
+﻿namespace Orderly.Model
 {
     using System;
     using System.Collections.Generic;
@@ -26,6 +26,9 @@ namespace Orderly.Model
         public int MaLoaiMon { get; set; }
 
         public decimal GiaTien { get; set; }
+
+        [StringLength(255)]  // Thêm cột HinhAnh vào Model
+        public string HinhAnh { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<ChiTietDonHang> ChiTietDonHangs { get; set; }
