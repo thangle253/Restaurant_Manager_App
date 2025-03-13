@@ -1,4 +1,6 @@
-﻿-- Sử dụng Database
+﻿CREATE DATABASE QuanLyNhaHang;
+GO
+-- Sử dụng Database
 USE QuanLyNhaHang;
 GO
 
@@ -15,7 +17,7 @@ CREATE TABLE MonAn (
     TenMon NVARCHAR(100) NOT NULL, -- Dùng NVARCHAR cho tiếng Việt có dấu
     MaLoaiMon INT NOT NULL,
     GiaTien DECIMAL(18, 2) NOT NULL,
-	HinhAnh NVARCHAR(255); ,
+	HinhAnh NVARCHAR(255) ,
     FOREIGN KEY (MaLoaiMon) REFERENCES LoaiMon(MaLoaiMon)
 );
 GO
