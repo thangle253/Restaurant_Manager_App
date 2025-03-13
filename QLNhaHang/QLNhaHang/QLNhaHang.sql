@@ -141,7 +141,7 @@ INSERT INTO MonAn (MaMon, TenMon, MaLoaiMon, GiaTien, HinhAnh) VALUES
 (2, N'Chả giò', 1, 40000, 'Food_Image\ChaGio.png'),
 (3, N'Cơm tấm sườn', 2, 45000, 'Food_Image\ComTam.png'),
 (4, N'Phở bò', 2, 50000, 'Food_Image\PhoBo.png'),
-(5, N'Bánh xèo', 2, 60000, 'C:\Users\BanhXeo.png'),
+(5, N'Bánh xèo', 2, 60000, 'Food_Image\BanhXeo.png'),
 (6, N'Bánh bèo', 2, 30000, 'Food_Image\BanhBeo.png'),
 (7, N'Chè trôi nước', 3, 20000, 'Food_Image\CheTroiNuoc.png'),
 (8, N'Rau câu dừa', 3, 15000, 'Food_Image\RauCauDua.png'),
